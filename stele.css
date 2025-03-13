@@ -1,0 +1,72 @@
+body {
+    color: rgb(18, 18, 19);
+    width: 1100px;
+    margin: 0 auto;
+    background-color: rgb(218, 132, 132);
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+input {
+    width: 80px;
+    margin: 5px;
+    background: rgb(196, 191, 191);
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+.input_go {
+    background: rgb(205, 207, 199);
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+.input_go:hover {
+    background: rgb(160, 226, 26);
+    border-radius: 5px;
+    border: 2px solid rgb(236, 203, 17);
+}
+
+.kalcyl {
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid green;
+}
+.df {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.aut, .aut1, .aut2, .aut_0 {
+    width: 80px;
+    height: 20px;
+    border-bottom: 2px solid green;
+}
+/* .aut22, .aut11, .aut00 {
+    width: 80px;
+    height: 20px;
+    border-bottom: 2px solid rgb(199, 50, 23);
+} */
+
+.tabl {
+    border: 2px solid green;
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+}
+tr, td {
+    border: 1px solid green;
+}
+.footer {
+    height: 100px;
+
+}
+
+
+
+.btn_pdf {
+    width: 130px;
+    height: 30px;
+    background: rgb(19, 170, 64);
+}

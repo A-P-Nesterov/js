@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stele.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stele.css" />
     <title>Document</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <div class="kalcyl">
-        <h2>Расчет количества дней простоя в ТО, ТР и КР для одного автомобиля за цикл</h2>
-        <p>D<sup>ц</sup><sub>пр</sub> = D<sup>ц</sup><sub>к</sub> 
-            <input type="text" class="input_dck"> + D<sup>ц</sup><sub>то и тр</sub>  
-            <input type="text" class="dc_totr"> 
-            <button class="input_go but_ras4et_dcpr">GO</button> (дн.)</p>
-      
-        <p >D<sup>ц</sup><sub>пр</sub> = <span class="DcPr"></span> </p>
+      <h2>
+        Расчет количества дней простоя в ТО, ТР и КР для одного автомобиля за
+        цикл
+      </h2>
+      <p>
+        D<sup>ц</sup><sub>пр</sub> = D<sup>ц</sup><sub>к</sub>
+        <input type="text" class="input_dck" /> + D<sup>ц</sup
+        ><sub>то и тр</sub>
+        <input type="text" class="dc_totr" />
+        <button class="input_go but_ras4et_dcpr">GO</button> (дн.)
+      </p>
 
-        <p>D<sup>ц</sup><sub>к</sub>= D<sup>н</sup><sub>к</sub>*N<sup>ц</sup><sub>к</sub>
-             <button class="input_go but_ras4et_dck">GO</button>(дн.)</p>
-        <p>D <sup>н</sup><sub>к</sub>
-            <input type="number" class="dnk"> нормативный простой а/м в КР [Пр.-5];</p>
-        <p class="">D<sup>ц</sup><sub>к</sub>=</p>
-        <p>D<sup>ц</sup><sub>то и тр</sub> = (L<sub>К</sub>*d<sub>1000</sub>/1000) * K<sup>'</sup><sub>4</sub>*K<sub>см</sub> 
-            <button class="input_go but_ras4et_dc_totr">GO</button> </p> 
-        <p class="">D<sup>ц</sup><sub>то и тр</sub> =</p>
-        <p>d<sub>1000</sub> – 
-            <input type="number" class="input_d1000"> норма простоя в ТО и ТР на 1000 км пробега [Пр.-5];</p>
-        <p> K<sup>'</sup><sub>4</sub>
-            <input type="number" class="input_ki4"> коэффициент, учитывающий пробег с начала эксплуатации [Пр.-5];</p>
-        <p> K<sub>см</sub>– 
-            <input type="number" class="input_ksm"> коэффициент сменности работы зон ТО и ТР </p>
-        <p>K<sub>см</sub> = 1 – в случае, когда ТО-2 и ТР выполняются в эксплуатационное (рабочее) для автомобилей время. Парк обслуживаемых автомобилей 100 и более едениц.</p>
-        <p>K<sub>см</sub> = 0,7 – перенос части ТО-2 и ТР работ на межсменное время. Парк обслуживаемых автомобилей 99 и меньше едениц.</p>
+      <p>D<sup>ц</sup><sub>пр</sub> = <span class="DcPr"></span></p>
 
+      <p>
+        D<sup>ц</sup><sub>к</sub>= D<sup>н</sup><sub>к</sub>*N<sup>ц</sup
+        ><sub>к</sub> <button class="input_go but_ras4et_dck">GO</button>(дн.)
+      </p>
+      <p>
+        D <sup>н</sup><sub>к</sub>
+        <input type="number" class="dnk" /> нормативный простой а/м в КР
+        [Пр.-5];
+      </p>
+      <p class="">D<sup>ц</sup><sub>к</sub>=</p>
+      <p>
+        D<sup>ц</sup><sub>то и тр</sub> = (L<sub>К</sub>*d<sub>1000</sub>/1000)
+        * K<sup>'</sup><sub>4</sub>*K<sub>см</sub>
+        <button class="input_go but_ras4et_dc_totr">GO</button>
+      </p>
+      <p class="">D<sup>ц</sup><sub>то и тр</sub> =</p>
+      <p>
+        d<sub>1000</sub> – <input type="number" class="input_d1000" /> норма
+        простоя в ТО и ТР на 1000 км пробега [Пр.-5];
+      </p>
+      <p>
+        K<sup>'</sup><sub>4</sub>
+        <input type="number" class="input_ki4" /> коэффициент, учитывающий
+        пробег с начала эксплуатации [Пр.-5];
+      </p>
+      <p>
+        K<sub>см</sub>– <input type="number" class="input_ksm" /> коэффициент
+        сменности работы зон ТО и ТР
+      </p>
+      <p>
+        K<sub>см</sub> = 1 – в случае, когда ТО-2 и ТР выполняются в
+        эксплуатационное (рабочее) для автомобилей время. Парк обслуживаемых
+        автомобилей 100 и более едениц.
+      </p>
+      <p>
+        K<sub>см</sub> = 0,7 – перенос части ТО-2 и ТР работ на межсменное
+        время. Парк обслуживаемых автомобилей 99 и меньше едениц.
+      </p>
     </div>
-    <div class="btn_pdf" onclick="javascript:window.print()">распечаать ПДФ</div>
-
-
-
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

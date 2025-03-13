@@ -4,3 +4,4 @@ document.querySelector(".but_ras4et_dcpr").addEventListener("click", () => {
   let data = data1 + data2;
   document.querySelector(".DcPr").innerHTML = data;
 });
+console.log("привет мир");
